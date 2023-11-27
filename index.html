@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Weather Wise Forecast ⛅</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- importing Google font - Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <!-- Bootstrap Link -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><i class="bi bi-house-door"></i></a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Temperature</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link acitve" href="#">Frequently Asked Questions</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section id="hero-section">
+    <div class="hero-title">
+  <h1>Welcome To,</h1> 
+  <h1>The Weather Wise Forecast Checker</h1>
+  <h1>🌦️</h1>
+    </div>
+  </section>
+  <div class="container">
+    <div class="input_weather">
+      <h2>Enter City Name</h2>
+      <input type="text" class="input-city" placeholder="E.g., London, New York, Tokyo">
+      <button class="seach-button">Search Now</button>
+      <div class="seperation"></div>
+      <button class="location-button">Current Location</button>
+      <img class="sunset" src="Photos/Sun (1).jpg" alt="picture of sun">
+    </div>
+    <div class="weather_data">
+      <div class="current-weather">
+      <div class="details">
+        <h2>London (2023-11-18)</h2>
+        <h4>Temperature: 19.10 °С</h4>
+        <h4>Wind: 4.31 M/S</h4>
+        <h4>Humidity: 79%</h4>
+        </div>
+      <div class="icon">
+        <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+        <h4>Light Rain</h4>
+      </div>
+    </div>
+      <div class="day-forecast">
+        <h2>5 - Day Forecast</h2>
+        <ul class="weather-cards">
+          <li class="card">
+            <h2>(2023-11-18)</h2>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <h4>Temperature: 19.10 °С</h4>
+            <h4>Wind: 4.31 M/S</h4>
+            <h4>Humidity: 79%</h4>
+            </li>
+          <li class="card">
+            <h2>(2023-11-18)</h2>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <h4>Temperature: 19.10 °С</h4>
+            <h4>Wind: 4.31 M/S</h4>
+            <h4>Humidity: 79%</h4>
+            </li>
+          <li class="card">
+            <h2>(2023-11-18)</h2>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <h4>Temperature: 19.10 °С</h4>
+            <h4>Wind: 4.31 M/S</h4>
+            <h4>Humidity: 79%</h4>
+            </li>
+          <li class="card">
+            <h2>(2023-11-18)</h2>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <h4>Temperature: 19.10 °С</h4>
+            <h4>Wind: 4.31 M/S</h4>
+            <h4>Humidity: 79%</h4>
+            </li>
+          <li class="card">
+            <h2>(2023-11-18)</h2>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+            <h4>Temperature: 19.10 °С</h4>
+            <h4>Wind: 4.31 M/S</h4>
+            <h4>Humidity: 79%</h4>
+            </li>
+        </ul>
+      </div>
+  </div>
+    </div>
+  <!-- seperation -->
+  <div class="support-container">
+    <div class="support-section">
+      <h1>Need Help?<i class="bi bi-headset"></i></h1>
+      <h3>Please enter your information below</h3>
+      <div class="support-form">
+        <form>
+          <ul>
+            <div class="form-input">
+              <input type="text" id="input-box" class="firstname" placeholder="First Name">
+              </div>
+            <div class="form-input">
+              <input type="text" id="input-box"  class="lastname" placeholder="Last Name">
+              </div>
+            <div class="form-input">
+              <input type="email" id="input-box"  class="email" placeholder="Johndoe@domain.com">
+              </div>
+            <div class="form-input">
+              <input type="text" id="input-box" class="phonenumber" placeholder="Phone Number">
+              </div>
+            <div>
+              <textarea id="bigtextarea" placeholder="Reason For Contact..."></textarea>
+            </div>
+              <button style="margin-top: 20px;"class="btn btn-outline-primary" id="contact-button">Contact Now!</button>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>&copy;2023 Bradley Vilsaint. All Rights Reserved.</footer>
+  <!-- Bootstrap Java -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>
